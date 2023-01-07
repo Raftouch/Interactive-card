@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="div-main">
+  <div class="div-images">
+    <div class="div-card-front">
+      <img src="images/card-logo.svg" alt="card-logo">
+
+      <div class="card-data">
+        <p class="four-zeros">0000 0000 0000 0000</p>
+        <p>Jane Appleseed<span>00/00</span></p>
+      </div>
+      <!-- <table>
+        <tr>
+          <td colspan="4">0000 0000 0000 0000</td>
+        </tr>
+        <tr>
+          <td colspan="2">Jane Appleseed</td><td></td><td>00/00</td>
+        </tr>
+      </table> -->
+
+    </div>
+    <div class="div-card-back">
+      <p>000</p>
+    </div>
+  </div>
+  <div class="div-card-details">
+    <table>
+      <tr>
+        <td colspan="4">
+          <p>Cardholder Name</p>
+          <input class="cardholder-name" type="text" placeholder="e.g. Jane Appleseed">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <p>Card Number</p>
+          <input class="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        </td>
+      </tr>
+      <tr>
+        <td class="exp-date" colspan="2">
+          <p>Exp. Date (MM/YY)</p>
+          <input class="exp-date-mm" type="text" placeholder="MM"> <input class="exp-date-yy" type="text" placeholder="YY">
+        </td>
+        <td class="cvc" colspan="2">
+          <p>CVC</p>
+          <input type="text" placeholder="e.g. 123">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <button class="button">Confirm</button>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
+  <!-- Completed state start -->
+
+  <div class="div-thank-you-hidden">
+    <img src="images/icon-complete.svg" alt="icon-complete">
+    <h1>Thank you!</h1>
+    <p>We've added your card details</p>
+    <button>Continue</button>
+  </div>
+  
+  <!--Coded by -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nelli</a>.
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
